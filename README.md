@@ -2,4 +2,4 @@
 
 This is my personal portfolio website showcasing my projects and skills.
 
-You can visit it [here](https://chhavisingh.github.io/).
+You can visit it [here](https://chhavisingh02.github.io/Portfolio/).
