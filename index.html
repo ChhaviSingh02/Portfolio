@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/d016bc7d3c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!----------------  NAVIGATION BAR STARTS ---------------------------->
+    <nav>
+        <ul id="sidemenu">
+            <li><a href="#Header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <!-- <li><a href="#achievements">Achievements</a></li> -->
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i id="cross" class="fas fa-times"></i>
+        </ul>
+        <i id="bars" class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <!-- NAVIGATION BAR ENDS -->
+
+    <!-----------------  HEADER SECTION ----------------------------------->
+    <div id="Header">
+        <div class="header">
+            
+            
+    <h1>Hi, I'm<br>
+    <span style="font-size: 4em;">Chhavi</span><br>
+        <span style="font-size: 4em;">Singh</span></h1>
+        <p>Developer & Designer</p>
+            <a href="mailto:chhavitomar0321@gmail.com" class="button">EMAIL ME</a>
+              </div>
+    </div>
+    <!-- HEADER SECTION ENDS -->
+    
+
+    <!----------------- ABOUT SECTION STARTS ------------------------------>
+    <div id="about">
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            Hey there! I'm Chhavi Singh, a passionate and enthusiastic Pre-final year student at IGDTUW 
+                            (Indira Gandhi Delhi Technical University for Women) with a projected graduation 
+                            year of '26. I am thrilled to share my journey and showcase my skills in the world 
+                            of technology and problem-solving.
+                        </p>
+    
+                        <!-- Tab Titles -->
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+    
+                        <!-- Tab Contents -->
+                        <div class="tab-contents active-tab" id="skills">
+                            <h2>Skills</h2>
+                            <ul>
+                                <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+                                <li><strong>Competitive Coding:</strong> C++, C, Python</li>
+                                <li><strong>Tools:</strong>Visual Studio, GIT, MySQL, Canva & Figma</li>
+                                <li><strong>Frameworks:</strong> Aframe, Bootstrap & Unity</li>
+                            </ul>
+                        </div>
+    
+                        <div class="tab-contents" id="experience">
+                            <h2>Experience</h2>
+                            <ul>
+                                <li><strong>Internship Mentee :</strong>  Metaverse Virtual Reality With Unity</li>
+                                Developed VR projects using A-Frame and Unity, gaining practical experience and knowledge in the implementation of
+                                immersive virtual reality experiences within the metaverse.
+                                <br><br>
+                                <li><strong>Executive Inayat : </strong> CSD IGDTUW</li>
+                                We raise awareness for SDGs 7, 12, and 13, promoting sustainable fashion through our campaign ’Care, Wear and Repair’.
+                            <br>
+                            </ul>
+                        </div>
+    
+                        <div class="tab-contents" id="education">
+                            <h2>Education</h2>
+                            <ul>
+                                <li><strong>2022-2026:</strong> B.Tech IT - Indira Gandhi Delhi Technical University For Women</li>
+                                <li><strong>2019-2021:</strong> 92.6% - DAV Public School</li>
+                                <li><strong>2017-2019:</strong> 95.8% - DAV Public School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function opentab(tabName) {
+            const tabLinks = document.getElementsByClassName("tab-links");
+            const tabContents = document.getElementsByClassName("tab-contents");
+    
+            for (let i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active-link");
+            }
+    
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active-tab");
+            }
+    
+            document.getElementById(tabName).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+    </script>
+    
+    <!-- ABOUT SECTION ENDS -->
+    <!-- LOGOS -->
+    <section class="logos container">
+        
+        <div class="marquee">
+            <div class="track">
+                <img src="./imgs/html.png" alt="HTML" width="128" />
+                <img src="./imgs/css.png" alt="CSS" width="128" />
+                <img src="./imgs/javascript.png" alt="JS" width="128" />
+                <img src="./imgs/react.png" width="128" alt="React" />
+                <img src="./imgs/azure.png" width="128" alt="Azure" />
+                <img src="./imgs/vscode.png" width="128" alt="VS Code" />
+                <img src="./imgs/python.png" width="128" alt="Python" />
+                <img src="./imgs/CPP.png" width="128" alt="C++" />
+                <img src="./imgs/html.png" alt="HTML" width="128" />
+                <img src="./imgs/css.png" alt="CSS" width="128" />
+                <img src="./imgs/javascript.png" alt="JS" width="128" />
+                <img src="./imgs/react.png" width="128" alt="React" />
+                <img src="./imgs/azure.png" width="128" alt="Azure" />
+                <img src="./imgs/vscode.png" width="128" alt="VS Code" />
+                <img src="./imgs/python.png" width="128" alt="Python" />
+                <img src="./imgs/CPP.png" width="128" alt="C++" />
+            </div>
+        </div>
+    </section>
+    <!-- ENDS -->
+    <!------------------- SERVICES SECTION STARTS -------------------------->
+    <div id="services">
+        <div class="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-lists">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>I find joy in crafting visually appealing and user-friendly websites. From frontend design 
+                            to backend functionality, I love working with HTML, CSS, JavaScript, and various frameworks 
+                            to bring ideas to life on the digital canvas.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-gear"></i>
+                        <h2>Machine Learning</h2>
+                        <p>The realm of machine learning fascinates me, as it allows me to explore the endless 
+                            possibilities of artificial intelligence. I enjoy diving into data, building models, and 
+                            discovering insights that can revolutionize the way we approach problems.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-bug"></i>
+                        <h2>Coding</h2>
+                        <p>As a problem solver at heart, I participate in competitive coding challenges. It sharpens 
+                            my logical thinking and helps me apply data structures and algorithms to devise efficient 
+                            solutions.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SERVICES SECTION ENDS -->
+     <!------------------- PORTFOLIO SECTION STARTS ------------------------->
+     <div class="project">
+     <div id="projects" class="bento container">
+        <h1 class="sub-title">
+            <small>My</small>
+            Projects</h1>
+        <div class="bento-grid">
+            <a href="https://git-upasana.github.io/eco-savvy/" class="bento-item">
+                <img src="./imgs/bento-1.png" alt="BGCCI" width="100%" />
+            </a>
+            <a href="https://github.com/ChhaviSingh02/animals" class="bento-item">
+                <img src="./imgs/bento-2.png" alt="Churhview" width="100%" />
+            </a>
+            <a href="https://github.com/ChhaviSingh02/Squid-Game" class="bento-item">
+                <img src="./imgs/bento-3.png" alt="Harley" width="100%" />
+            </a>
+            <a href="https://github.com/ChhaviSingh02/RouteRover-Bot" class="bento-item">
+                <img src="./imgs/bento-4.jpeg" alt="Bunbury" width="100%" />
+            </a>
+            <a href="#" class="bento-item">
+                <img src="./imgs/bento-5.png" alt="Running" width="100%" />
+            </a>
+           
+        </div>
+    </div>
+    </div>
+
+    <!-- ENDS -->
+    <!------------------- ACHIEVEMENTS SECTION STARTS --------------------->
+    <div id="achievements">
+        <div class="work">
+            <section class="work-experience container">
+                <h1 class="sub-title"><small>Recent</small> Hackathon Experience</h1>
+                <div class="jobs">
+                     
+                    <article>
+                        <figure>
+                            <div>
+                                <img src="Workplace 1.png" alt="Hackathon" width="100%" />
+                                <figcaption>GDSC, IGDTUW DEVCATION'24 HACK N SOLVE</figcaption>
+                            </div>
+                        </figure>
+                        <h3>Finalist in Devcation'24</h3>
+                        <div>Mar 2024 - Apr 2024</div>
+                        <p>A team project that offers a transformative experience by scanning and classifying waste, 
+                            providing eco-education in an AR room, offering a platform for recycling, and including a
+                            waste sorting interactive game.</p>
+                    </article>
+                    
+    
+                    <article>
+                        <figure>
+                            <div>
+                                <a href="https://www.linkedin.com/posts/chhavisingh02_viksitbharat2047-ideathon-tourisminnovation-activity-7162791801894940672-coXc?utm_source=share&utm_medium=member_desktop">
+                                    <img src="Workplace 2.png" alt="Hackathon" width="100%" />
+                                </a>
+                                <figcaption>E-CELL, IGDTUW VIKSIT BHARAT IDEATHON'24</figcaption>
+                            </div>
+                        </figure>
+                        <h3>Finalist in IDEATHON</h3>
+                        <div>Jan 2024 - Feb 2024</div>
+                        <p>SAFAR SYNK, part of the Tourism WanderWisdom track, enhances travel by offering personalized 
+                            recommendations, itinerary planning, real-time event updates, ticket purchases, local dining 
+                            suggestions, and language assistance.</p>
+                    </article>
+    
+                    <article>
+                        <figure>
+                            <div>
+                                <img src="Workplace 3.png" alt="Experience" width="100%" />
+                                <figcaption>SteamEdu Learning Internship</figcaption>
+                            </div>
+                        </figure>
+                        <h3>Metaverse Virtual Reality With Unity</h3>
+                        <div>Jun 2023 - Aug 2023</div>
+                        <p>Squid Games Red and Green Light Game an immersive experience inspired by the Netflix series, 
+                            leveraging AR/VR and metaverse technologies with Unity, Aframe, and Magica Voxel.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <!-- ACHIEVEMENTS SECTION ENDS -->
+
+            
+
+    <!------------------- CONTACT SECTION STARTS -------------------------->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <h3>Let's Get In Touch</h3>
+                    <p><i class="fa-solid fa-envelope"></i><a href="mailto:chhavitomar0321.com">chhavitomar0321.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i>xxx xxxx xxx</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/chhavisingh02/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ChhaviSingh02" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/ChhaviTomar10" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <br>
+                    <a href="Chhavi_Resume_april24.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END -->
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2024 Chhavi Singh. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+    <!-- Link to JavaScript File -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
